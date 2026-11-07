@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>document.documentElement.classList.add('js');</script>
+
+<!-- ============ SEO ============ -->
+<title>VKS CREATE — Vivek Solanki | Video Editor &amp; Content Creator</title>
+<meta name="description" content="VKS CREATE by Vivek Solanki — video editor & content creator from Khategaon, Madhya Pradesh. Reels editing, YouTube editing, color grading, motion graphics & thumbnails that make your content go viral." />
+<meta name="keywords" content="video editor, reels editing, youtube editor, color grading, motion graphics, thumbnails, VKS CREATE, Vivek Solanki, Khategaon, Madhya Pradesh" />
+<meta name="author" content="Vivek Solanki" />
+<meta name="theme-color" content="#0B0B0F" />
+<!-- Open Graph — og:image uses /og-banner.jpg from this same folder -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="VKS CREATE — Edits That Make Your Content Go Viral" />
+<meta property="og:description" content="Reels editing, YouTube editing, color grading, motion graphics & thumbnails by Vivek Solanki." />
+<meta property="og:image" content="/og-banner.jpg" />
+<meta property="og:url" content="" /><!-- ★ paste your live URL after deploy -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="VKS CREATE — Edits That Make Your Content Go Viral" />
+<meta name="twitter:image" content="/og-banner.jpg" />
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"><rect x="15" y="6" width="18" height="24" rx="3"/><path d="M8 18h7M33 18h7M24 30v9M24 39l-9 7M24 39l9 7"/></svg>' />
+
+<!-- Fonts: Bebas Neue (headings) + Poppins (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<!-- Smooth momentum scrolling (falls back to native scroll if the CDN is blocked) -->
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" defer></script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Vivek Solanki","alternateName":"VKS CREATE","jobTitle":"Video Editor & Content Creator","address":{"@type":"PostalAddress","addressLocality":"Khategaon","addressRegion":"Madhya Pradesh","addressCountry":"IN"},"email":"viveksolanki7772@gmail.com","telephone":"+916353480688","sameAs":["https://www.instagram.com/_vks_create/","https://www.youtube.com/@vks_create"]}
+</script>
+
+<style>
+/* ================================================================
+   VKS CREATE — design tokens
+   ================================================================ */
+:root{
+  --bg:#0B0B0F;            /* dark cinematic base */
+  --bg2:#101018;
+  --ink:#F5F2EC;           /* warm white */
+  --muted:#98A1AC;
+  --dusty:#5C6B7E;         /* dusty blue-grey */
+  --dusty2:#8B93A5;
+  --peach:#EDBB8F;         /* warm peach */
+  --tan:#D99C6B;           /* tan accent */
+  --grad:linear-gradient(115deg,#5C6B7E 0%,#9A8878 42%,#EDBB8F 78%,#D99C6B 100%);
+  --line:rgba(245,242,236,.12);
+  --glass:rgba(255,255,255,.045);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --nav-h:76px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden;overflow-x:clip}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Poppins',sans-serif;font-weight:300;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip;
+}
+::selection{background:rgba(237,187,143,.85);color:#14100B}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+section{scroll-margin-top:calc(var(--nav-h) + 8px)}
+h1,h2,h3,.bebas{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.02em}
+
+/* film grain over everything */
+body::after{
+  content:"";position:fixed;inset:-50%;z-index:2000;pointer-events:none;opacity:.055;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grain 7s steps(10) infinite;
+}
+@keyframes grain{0%,100%{transform:translate(0,0)}20%{transform:translate(-2%,3%)}40%{transform:translate(3%,-2%)}60%{transform:translate(-3%,-3%)}80%{transform:translate(2%,2%)}}
+
+.container{width:min(1220px,92%);margin-inline:auto}
+.section{padding:clamp(90px,11vw,150px) 0;position:relative}
+
+/* section eyebrow + headings */
+.eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+.eyebrow .num{font-family:'Bebas Neue';font-size:1.05rem;color:var(--peach);letter-spacing:.15em}
+.eyebrow .rule{width:58px;height:1px;background:var(--peach);opacity:.7}
+.eyebrow .tag{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+h2.sec-title{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.95;margin-bottom:18px}
+.sec-sub{color:var(--muted);max-width:560px;font-size:.98rem;line-height:1.75}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:1rem 2.1rem;border-radius:999px;
+  font-size:.92rem;font-weight:500;letter-spacing:.02em;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s,background .35s;will-change:transform}
+.btn svg{width:17px;height:17px;flex:none}
+.btn-grad{background:var(--grad);color:#181008;font-weight:600;box-shadow:0 8px 32px rgba(237,187,143,.18)}
+.btn-grad:hover{transform:translateY(-3px);box-shadow:0 16px 44px rgba(237,187,143,.32)}
+.btn-ghost{border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(14px);color:var(--ink)}
+.btn-ghost:hover{transform:translateY(-3px);border-color:rgba(237,187,143,.65)}
+
+/* ================================================================
+   INTRO / PAGE-LOAD LOGO REVEAL
+   ================================================================ */
+#intro{position:fixed;inset:0;z-index:4000;background:var(--bg);display:grid;place-items:center;
+  transition:transform .85s var(--ease) .12s}
+#intro.done{transform:translateY(-101%)}
+.intro-inner{display:flex;flex-direction:column;align-items:center;gap:22px}
+.intro-mark{width:88px;height:88px;color:var(--peach)}
+.intro-mark svg{width:100%;height:100%}
+.intro-mark svg rect,.intro-mark svg path{stroke-dasharray:130;stroke-dashoffset:130;animation:draw 1.1s var(--ease) .15s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.intro-word{font-family:'Bebas Neue';font-size:1.7rem;letter-spacing:.42em;text-indent:.42em;overflow:hidden}
+.intro-word span{display:inline-block;transform:translateY(120%);animation:up .8s var(--ease) .55s forwards}
+@keyframes up{to{transform:translateY(0)}}
+.intro-bar{width:150px;height:1px;background:var(--line);overflow:hidden}
+.intro-bar i{display:block;height:100%;background:var(--grad);width:0;animation:bar 1.5s var(--ease) .3s forwards}
+@keyframes bar{to{width:100%}}
+.js #intro.gone{display:none}
+@media (prefers-reduced-motion:reduce){#intro{display:none}}
+
+/* ================================================================
+   PROGRESS BAR / CURSOR
+   ================================================================ */
+#progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:2600;pointer-events:none}
+#progress i{display:block;height:100%;background:var(--grad);transform-origin:0 50%;transform:scaleX(0)}
+#cursor,#cursor-dot{position:fixed;top:0;left:0;z-index:2500;pointer-events:none;border-radius:50%;
+  transform:translate(-50%,-50%);will-change:transform;display:none}
+#cursor{width:34px;height:34px;border:1.5px solid rgba(245,242,236,.45);transition:width .3s,height .3s,border-color .3s,box-shadow .3s}
+#cursor-dot{width:6px;height:6px;background:var(--peach)}
+body.cursor-hover #cursor{width:58px;height:58px;border-color:rgba(237,187,143,.9);box-shadow:0 0 26px rgba(237,187,143,.4)}
+@media (hover:hover) and (pointer:fine){
+  #cursor,#cursor-dot{display:block}
+  html,body,a,button,label{cursor:none}
+  input,textarea,select{cursor:auto}
+}
+
+/* ================================================================
+   NAVBAR
+   ================================================================ */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1200;transition:background .4s,border-color .4s,backdrop-filter .4s;border-bottom:1px solid transparent}
+#nav.scrolled{background:rgba(11,11,15,.74);backdrop-filter:blur(18px);border-color:var(--line)}
+.nav-inner{height:var(--nav-h);width:min(1280px,94%);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:40px;height:40px;color:var(--peach)}
+.brand-mark svg{width:100%;height:100%}
+.brand-text{display:flex;flex-direction:column;line-height:.9;font-family:'Bebas Neue'}
+.brand-text b{font-weight:400;font-size:1.3rem;letter-spacing:.08em}
+.brand-text i{font-style:normal;font-size:.62rem;letter-spacing:.46em;color:var(--peach)}
+.links{display:flex;align-items:center}
+.links a{font-size:.9rem;color:var(--muted);margin:0 15px;position:relative;transition:color .3s}
+.links a::after{content:"";position:absolute;left:0;bottom:-7px;height:1.5px;width:0;background:var(--peach);transition:width .35s var(--ease)}
+.links a:hover,.links a.active{color:var(--ink)}
+.links a:hover::after,.links a.active::after{width:100%}
+.nav-cta{padding:.7rem 1.7rem;font-size:.85rem}
+#burger{display:none;width:44px;height:44px;position:relative;z-index:1102}
+#burger span{position:absolute;left:11px;width:22px;height:2px;background:var(--ink);transition:.4s var(--ease)}
+#burger span:first-child{top:19px}#burger span:last-child{top:26px}
+#burger.open span:first-child{top:22px;transform:rotate(45deg)}
+#burger.open span:last-child{top:22px;transform:rotate(-45deg)}
+@media (max-width:900px){.links,.nav-cta{display:none}#burger{display:block}}
+
+/* mobile menu overlay */
+#menu{position:fixed;inset:0;z-index:1100;background:rgba(11,11,15,.97);backdrop-filter:blur(22px);
+  display:flex;flex-direction:column;justify-content:center;padding:0 9%;
+  clip-path:circle(0 at calc(100% - 48px) 42px);transition:clip-path .7s var(--ease);visibility:hidden}
+#menu.open{clip-path:circle(150% at calc(100% - 48px) 42px);visibility:visible}
+#menu a.m-link{font-family:'Bebas Neue';font-size:clamp(2.4rem,9vw,3.6rem);line-height:1.25;color:var(--ink);
+  opacity:0;transform:translateY(26px);transition:opacity .5s var(--ease),transform .5s var(--ease),color .3s}
+#menu.open a.m-link{opacity:1;transform:none}
+#menu a.m-link:hover{color:var(--peach)}
+#menu a.m-link span{font-family:'Poppins';font-size:.75rem;color:var(--peach);vertical-align:super;margin-right:12px;letter-spacing:.2em}
+.menu-foot{margin-top:34px;display:flex;gap:14px;opacity:0;transition:opacity .5s .35s}
+#menu.open .menu-foot{opacity:1}
+@media (prefers-reduced-motion:reduce){#menu{transition:none}.js #menu a.m-link{opacity:1;transform:none}}
+
+/* ================================================================
+   HERO
+   ================================================================ */
+#home{min-height:100svh;position:relative;display:grid;place-items:center;overflow:hidden;padding-top:var(--nav-h)}
+.bg-sunset{position:absolute;inset:-22%;z-index:0;animation:drift 16s ease-in-out infinite alternate;background:
+  radial-gradient(58% 52% at 78% 16%,rgba(92,107,126,.6),transparent 62%),
+  radial-gradient(52% 46% at 16% 82%,rgba(237,187,143,.5),transparent 62%),
+  radial-gradient(44% 40% at 62% 74%,rgba(217,156,107,.4),transparent 65%),
+  radial-gradient(40% 36% at 30% 24%,rgba(139,147,165,.28),transparent 60%),var(--bg)}
+@keyframes drift{to{transform:translate3d(2.2%,-2%,0) scale(1.06) rotate(1deg)}}
+.hero-horizon{position:absolute;left:0;right:0;bottom:22%;height:1px;z-index:1;
+  background:linear-gradient(90deg,transparent,rgba(237,187,143,.55),transparent)}
+.hero-horizon::after{content:"";position:absolute;inset:-46px 0;background:radial-gradient(50% 100% at 50% 100%,rgba(237,187,143,.16),transparent 70%)}
+.hero-inner{position:relative;z-index:3;width:min(1220px,92%);margin:auto;text-align:left;padding:40px 0 110px}
+.hero-eyebrow{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:26px}
+.chip{display:inline-flex;align-items:center;gap:9px;font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--peach);border:1px solid rgba(237,187,143,.35);border-radius:999px;padding:.55rem 1.1rem;background:rgba(237,187,143,.07)}
+.chip .dot{width:6px;height:6px;border-radius:50%;background:var(--peach);animation:blink 2.2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.hero-loc{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.hero-name{font-size:clamp(3.9rem,16.5vw,10.6rem);line-height:.88;text-transform:uppercase}
+.mask{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.line-in{display:block;transform:translateY(118%);transition:transform 1.05s var(--ease);transition-delay:var(--d,0s)}
+body.loaded .line-in{transform:translateY(0)}
+.hero-tag{margin-top:26px;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.hero-typing{margin-top:14px;font-family:'Bebas Neue';font-size:clamp(1.5rem,4.4vw,2.6rem);letter-spacing:.04em;min-height:1.3em}
+.hero-typing .pre{color:var(--muted);margin-right:.45em;font-family:'Poppins';font-weight:300;font-size:.62em;vertical-align:.18em;letter-spacing:.18em;text-transform:uppercase}
+#typed{color:var(--peach)}
+.caret{display:inline-block;width:2px;height:.9em;background:var(--peach);margin-left:6px;vertical-align:-.08em;animation:blink 1s steps(1) infinite}
+.hero-ctas{margin-top:38px;display:flex;flex-wrap:wrap;gap:16px}
+.hero-meta{margin-top:34px;font-size:.78rem;color:var(--muted);letter-spacing:.06em}
+.scroll-cue{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;
+  font-size:.62rem;letter-spacing:.4em;text-transform:uppercase;color:var(--muted)}
+.scroll-cue i{width:1px;height:44px;background:linear-gradient(var(--peach),transparent);display:block;animation:cue 1.8s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* floating shapes with parallax */
+.fl-wrap{position:absolute;z-index:2;will-change:transform;pointer-events:none}
+.fl{display:block;animation:floaty 7s ease-in-out infinite;animation-delay:var(--fd,0s)}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(var(--rot,0deg))}50%{transform:translateY(-18px) rotate(var(--rot,0deg))}}
+.f1{top:20%;left:6%;color:rgba(245,242,236,.28)}
+.f2{top:16%;right:7%;color:rgba(237,187,143,.55)}
+.f3{bottom:14%;right:14%;color:rgba(139,147,165,.4)}
+.f4{bottom:20%;left:12%;color:rgba(237,187,143,.3)}
+@media (max-width:700px){.f1,.f4{display:none}.f2{top:12%;right:5%}.f3{bottom:12%;right:6%}}
+
+/* ================================================================
+   MARQUEE (slow editorial)
+   ================================================================ */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:26px 0;background:rgba(255,255,255,.015)}
+.mq-track{display:flex;width:max-content;animation:mq 46s linear infinite;gap:0}
+.marquee:hover .mq-track{animation-play-state:paused}
+.mq-track > div{display:flex;align-items:center;flex:none}
+.mq-item{font-family:'Bebas Neue';font-size:clamp(1.7rem,3.6vw,2.8rem);letter-spacing:.06em;color:transparent;
+  -webkit-text-stroke:1px rgba(245,242,236,.55);white-space:nowrap;padding:0 30px}
+.mq-item.fill{color:var(--peach);-webkit-text-stroke:0}
+.mq-dot{width:9px;height:9px;background:var(--tan);transform:rotate(45deg);flex:none;opacity:.8}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none}}
+
+/* ================================================================
+   REELS / WORK
+   ================================================================ */
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:52px}
+.reels{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4% 28px;scrollbar-width:none}
+.reels::-webkit-scrollbar{display:none}
+.reel{flex:0 0 min(74vw,300px);scroll-snap-align:center;position:relative;aspect-ratio:9/16;border-radius:20px;overflow:hidden;
+  border:1px solid var(--line);background:var(--bg2);transition:transform .5s var(--ease),border-color .5s,box-shadow .5s;will-change:transform}
+.reel:hover{transform:translateY(-8px);border-color:rgba(237,187,143,.55);box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.reel-media{position:absolute;inset:0}
+.reel-media img,.reel-media video{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.reel:hover .reel-media img{transform:scale(1.06)}
+.reel-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,15,.05) 40%,rgba(11,11,15,.86));pointer-events:none}
+.reel-badge{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;gap:6px;
+  font-size:.68rem;font-weight:500;letter-spacing:.08em;background:rgba(11,11,15,.62);backdrop-filter:blur(10px);
+  border:1px solid var(--line);border-radius:999px;padding:.38rem .8rem;color:var(--ink)}
+.reel-badge svg{width:11px;height:11px;color:var(--peach)}
+.reel-meta{position:absolute;left:16px;right:16px;bottom:14px;z-index:2}
+.reel-title{font-family:'Bebas Neue';font-size:1.25rem;letter-spacing:.05em}
+.reel-sub{font-size:.7rem;color:rgba(245,242,236,.72);letter-spacing:.14em;text-transform:uppercase;margin-top:3px}
+.reel-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(.85);width:58px;height:58px;border-radius:50%;
+  display:grid;place-items:center;background:rgba(11,11,15,.5);border:1px solid rgba(245,242,236,.4);backdrop-filter:blur(8px);
+  opacity:0;transition:.4s var(--ease);z-index:2}
+.reel:hover .reel-play,.reel:focus-visible .reel-play{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.reel-play svg{width:20px;height:20px;margin-left:3px;color:var(--ink)}
+.reels-more{margin-top:34px;display:flex;justify-content:center}
+@media (min-width:1024px){
+  .reels{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;overflow:visible;padding:6px 0 0}
+  .reel{flex:none}
+}
+
+/* lightbox */
+#lightbox{position:fixed;inset:0;z-index:3000;background:rgba(8,8,12,.93);backdrop-filter:blur(16px);
+  display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .35s}
+#lightbox.open{opacity:1;pointer-events:auto}
+.lb-stage{width:min(420px,92vw);aspect-ratio:9/16;max-height:82vh;border-radius:18px;overflow:hidden;background:#000;
+  border:1px solid var(--line);position:relative;box-shadow:0 40px 120px rgba(0,0,0,.7)}
+.lb-stage video,.lb-stage iframe{width:100%;height:100%;object-fit:contain;border:0;display:block}
+.lb-stage .lb-empty{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:28px;color:var(--muted);font-size:.85rem;line-height:1.7}
+.lb-close{position:absolute;top:20px;right:22px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);
+  background:rgba(255,255,255,.06);display:grid;place-items:center;z-index:2;transition:.3s}
+.lb-close:hover{border-color:var(--peach);color:var(--peach)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;
+  border:1px solid var(--line);background:rgba(255,255,255,.06);display:grid;place-items:center;transition:.3s;z-index:2}
+.lb-nav:hover{border-color:var(--peach);color:var(--peach)}
+.lb-prev{left:3vw}.lb-next{right:3vw}
+.lb-caption{position:absolute;bottom:26px;left:0;right:0;text-align:center;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:640px){.lb-prev{left:8px}.lb-next{right:8px}}
+
+/* ================================================================
+   ABOUT
+   ================================================================ */
+.about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(36px,6vw,80px);align-items:center}
+.about-photo{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/5}
+.about-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(1.02)}
+.about-photo::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(80% 60% at 50% 30%,transparent 55%,rgba(11,11,15,.55));pointer-events:none}
+.about-photo::after{content:"";position:absolute;inset:14px;z-index:2;border:1px solid rgba(245,242,236,.25);border-radius:14px;pointer-events:none}
+.about-exp{position:absolute;z-index:3;bottom:22px;left:22px;background:rgba(11,11,15,.66);backdrop-filter:blur(12px);
+  border:1px solid var(--line);border-radius:14px;padding:14px 20px}
+.about-exp b{font-family:'Bebas Neue';font-size:2rem;color:var(--peach);display:block;line-height:1}
+.about-exp span{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.about-bio{color:var(--muted);line-height:1.9;font-size:.98rem}
+.about-bio strong{color:var(--ink);font-weight:500}
+.about-sign{margin-top:22px;font-family:'Bebas Neue';font-size:1.7rem;letter-spacing:.1em;color:var(--peach)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:64px}
+.stat{background:var(--bg2);padding:34px 18px;text-align:center;position:relative;transition:background .4s}
+.stat:hover{background:#15151f}
+.stat-num{font-family:'Bebas Neue';font-size:clamp(2.4rem,5vw,3.6rem);color:var(--ink);display:block;line-height:1}
+.stat-num em{font-style:normal;color:var(--peach)}
+.stat-label{display:block;margin-top:8px;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* ================================================================
+   SERVICES
+   ================================================================ */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{position:relative;border-radius:22px;padding:36px 30px;background:var(--glass);border:1px solid var(--line);
+  backdrop-filter:blur(14px);transform:perspective(900px) rotateX(var(--rx,0)) rotateY(var(--ry,0));
+  transition:transform .25s ease-out,border-color .4s,box-shadow .4s;transform-style:preserve-3d;overflow:hidden}
+.svc::before{content:"";position:absolute;inset:0;opacity:0;transition:opacity .4s;pointer-events:none;
+  background:radial-gradient(340px circle at var(--gx,50%) var(--gy,50%),rgba(237,187,143,.16),transparent 65%)}
+.svc:hover{border-color:rgba(237,187,143,.5);box-shadow:0 24px 70px rgba(0,0,0,.45)}
+.svc:hover::before{opacity:1}
+.svc-ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;color:var(--peach);
+  background:rgba(237,187,143,.1);border:1px solid rgba(237,187,143,.3);margin-bottom:24px}
+.svc-ic svg{width:24px;height:24px}
+.svc h3{font-size:1.55rem;letter-spacing:.05em;margin-bottom:10px}
+.svc p{color:var(--muted);font-size:.87rem;line-height:1.75}
+.svc-no{position:absolute;top:24px;right:26px;font-family:'Bebas Neue';font-size:1rem;color:rgba(245,242,236,.25);letter-spacing:.1em}
+@media (max-width:980px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.svc-grid{grid-template-columns:1fr}}
+
+/* ================================================================
+   SOFTWARE TOOLS
+   ================================================================ */
+.tools-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tool{position:relative;border-radius:22px;border:1px solid var(--line);padding:44px 30px;text-align:center;overflow:hidden;
+  background:linear-gradient(160deg,rgba(92,107,126,.14),rgba(237,187,143,.07));transition:transform .5s var(--ease),border-color .4s}
+.tool:hover{transform:translateY(-8px);border-color:rgba(237,187,143,.5)}
+.tool-name{font-family:'Bebas Neue';font-size:clamp(2.2rem,4.5vw,3.2rem);letter-spacing:.06em}
+.tool-use{margin-top:10px;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.tool-glow{position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:70%;height:70%;border-radius:50%;
+  background:radial-gradient(circle,rgba(237,187,143,.18),transparent 70%);opacity:0;transition:opacity .5s}
+.tool:hover .tool-glow{opacity:1}
+@media (max-width:760px){.tools-row{grid-template-columns:1fr}}
+
+/* ================================================================
+   BEFORE / AFTER
+   ================================================================ */
+.ba-wrap{max-width:980px;margin-inline:auto}
+.ba{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/9;user-select:none;touch-action:pan-y;--pos:50%}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba-before-wrap{position:absolute;top:0;left:0;bottom:0;width:var(--pos);overflow:hidden}
+.ba-before{filter:saturate(.28) contrast(.8) brightness(.92) sepia(.14)!important;width:auto}
+.ba::after{content:"";position:absolute;top:0;bottom:0;left:var(--pos);width:2px;background:var(--peach);transform:translateX(-1px);pointer-events:none;box-shadow:0 0 22px rgba(237,187,143,.7)}
+.ba-handle{position:absolute;top:50%;left:var(--pos);transform:translate(-50%,-50%);z-index:3;width:52px;height:52px;border-radius:50%;
+  background:rgba(11,11,15,.7);border:1.5px solid var(--peach);backdrop-filter:blur(8px);display:grid;place-items:center;transition:box-shadow .3s}
+.ba-handle:hover{box-shadow:0 0 0 8px rgba(237,187,143,.15)}
+.ba-handle svg{width:20px;height:20px;color:var(--peach)}
+.ba-tag{position:absolute;top:18px;z-index:2;font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;
+  background:rgba(11,11,15,.62);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:999px;padding:.45rem .95rem;color:var(--ink)}
+.ba-tag.raw{left:18px;color:var(--dusty2)}
+.ba-tag.graded{right:18px;color:var(--peach)}
+.ba-hint{text-align:center;margin-top:20px;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* ================================================================
+   CONTACT
+   ================================================================ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(36px,5vw,70px);align-items:start}
+.direct{display:flex;flex-direction:column;gap:14px;margin-top:34px}
+.direct a{display:flex;align-items:center;gap:16px;padding:16px 20px;border-radius:16px;border:1px solid var(--line);
+  background:var(--glass);backdrop-filter:blur(12px);transition:.35s var(--ease);font-size:.9rem}
+.direct a:hover{transform:translateX(8px);border-color:rgba(237,187,143,.55)}
+.direct svg{width:19px;height:19px;color:var(--peach);flex:none}
+.direct small{display:block;color:var(--muted);font-size:.7rem;letter-spacing:.1em}
+.form-card{position:relative;border-radius:24px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(16px);padding:clamp(26px,4vw,44px)}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.field label{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:13px;
+  padding:14px 16px;color:var(--ink);font:inherit;font-size:.9rem;transition:border-color .3s,box-shadow .3s;width:100%}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:rgba(237,187,143,.65);box-shadow:0 0 0 3px rgba(237,187,143,.12)}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23EDBB8F' fill='none' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.field select option{background:#14141c;color:var(--ink)}
+.form-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+.form-note{margin-top:16px;font-size:.72rem;color:var(--muted);line-height:1.6}
+/* success state */
+#formSuccess{position:absolute;inset:0;border-radius:24px;background:rgba(11,11,15,.96);backdrop-filter:blur(10px);z-index:5;
+  display:grid;place-items:center;text-align:center;opacity:0;pointer-events:none;transition:opacity .45s;padding:24px}
+#formSuccess.show{opacity:1;pointer-events:auto}
+#formSuccess svg{width:86px;height:86px;margin:0 auto 18px;color:var(--peach)}
+#formSuccess svg circle,#formSuccess svg path{stroke-dasharray:320;stroke-dashoffset:320}
+#formSuccess.show svg circle{animation:draw2 .8s var(--ease) .1s forwards}
+#formSuccess.show svg path{animation:draw2 .5s var(--ease) .8s forwards}
+@keyframes draw2{to{stroke-dashoffset:0}}
+#formSuccess h3{font-size:2rem;letter-spacing:.06em;margin-bottom:8px}
+#formSuccess p{color:var(--muted);font-size:.88rem;margin-bottom:22px}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}.f-row{grid-template-columns:1fr}}
+
+/* ================================================================
+   FOOTER
+   ================================================================ */
+footer{border-top:1px solid var(--line);padding:70px 0 0;position:relative;overflow:hidden}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;padding-bottom:56px}
+.foot-blurb{color:var(--muted);font-size:.86rem;line-height:1.8;margin-top:18px;max-width:320px}
+.foot-h{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--peach);margin-bottom:20px}
+.foot-links{display:flex;flex-direction:column;gap:12px}
+.foot-links a{color:var(--muted);font-size:.88rem;transition:color .3s,transform .3s;width:fit-content}
+.foot-links a:hover{color:var(--ink);transform:translateX(5px)}
+.socials{display:flex;gap:12px}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:.35s var(--ease)}
+.socials a:hover{border-color:var(--peach);color:var(--peach);transform:translateY(-4px)}
+.socials svg{width:18px;height:18px}
+.foot-bottom{border-top:1px solid var(--line);padding:22px 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.74rem;color:var(--muted)}
+.watermark{position:absolute;bottom:-4%;left:50%;transform:translateX(-50%);font-family:'Bebas Neue';font-size:clamp(6rem,17vw,15rem);
+  letter-spacing:.08em;color:transparent;-webkit-text-stroke:1px rgba(245,242,236,.05);pointer-events:none;white-space:nowrap;line-height:1}
+@media (max-width:820px){.foot-grid{grid-template-columns:1fr}}
+
+/* ================================================================
+   FLOATING BUTTONS + TOAST
+   ================================================================ */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:1400;width:58px;height:58px;border-radius:50%;background:#22c15e;
+  display:grid;place-items:center;color:#fff;box-shadow:0 12px 34px rgba(34,193,94,.4);transition:transform .3s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:27px;height:27px}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #22c15e;animation:pulse 2s ease-out infinite}
+@keyframes pulse{from{transform:scale(1);opacity:.8}to{transform:scale(1.85);opacity:0}}
+#btt{position:fixed;right:26px;bottom:96px;z-index:1400;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);
+  background:rgba(255,255,255,.06);backdrop-filter:blur(12px);display:grid;place-items:center;
+  opacity:0;visibility:hidden;transform:translateY(14px);transition:.4s var(--ease)}
+#btt.show{opacity:1;visibility:visible;transform:none}
+#btt:hover{border-color:var(--peach);color:var(--peach)}
+#btt svg{width:18px;height:18px}
+#toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,80px);z-index:3500;max-width:90vw;
+  background:rgba(20,20,28,.92);backdrop-filter:blur(14px);border:1px solid rgba(237,187,143,.4);border-radius:14px;
+  padding:14px 22px;font-size:.85rem;opacity:0;transition:.45s var(--ease);pointer-events:none}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ================================================================
+   SCROLL REVEALS (activated only when JS runs — .js on <html>)
+   ================================================================ */
+.js .reveal{opacity:0;transform:translateY(38px);transition:opacity .95s var(--ease),transform .95s var(--ease);transition-delay:var(--d,0s)}
+.js .reveal.slide-l{transform:translateX(-48px)}
+.js .reveal.slide-r{transform:translateX(48px)}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .bg-sunset,.fl,.scroll-cue i{animation:none!important}
+  .line-in{transform:none!important;transition:none!important}
+}
+</style>
+</head>
+
+<body>
+<!-- React root (unused by the site — the whole page below is plain HTML/CSS/JS) -->
+<div id="root" aria-hidden="true"></div>
+
+<!-- ============ PAGE-LOAD INTRO ============ -->
+<div id="intro" data-testid="intro-loader">
+  <div class="intro-inner">
+    <span class="intro-mark" data-logo></span>
+    <div class="intro-word"><span>VKS&nbsp;CREATE</span></div>
+    <div class="intro-bar"><i></i></div>
+  </div>
+</div>
+
+<div id="progress"><i></i></div>
+<div id="cursor" aria-hidden="true"></div><div id="cursor-dot" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header id="nav" data-testid="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="brand" data-testid="brand-logo" aria-label="VKS CREATE home">
+      <span class="brand-mark" data-logo></span>
+      <span class="brand-text"><b>VKS</b><i>CREATE</i></span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#work" data-spy="work">Work</a>
+      <a href="#about" data-spy="about">About</a>
+      <a href="#services" data-spy="services">Services</a>
+      <a href="#tools" data-spy="tools">Tools</a>
+      <a href="#contact" data-spy="contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-grad nav-cta" data-testid="nav-hire-btn">Hire Me</a>
+    <button id="burger" data-testid="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div id="menu" data-testid="mobile-menu" aria-hidden="true">
+  <a class="m-link" style="transition-delay:.08s" href="#work"><span>01</span>WORK</a>
+  <a class="m-link" style="transition-delay:.14s" href="#about"><span>02</span>ABOUT</a>
+  <a class="m-link" style="transition-delay:.2s" href="#services"><span>03</span>SERVICES</a>
+  <a class="m-link" style="transition-delay:.26s" href="#tools"><span>04</span>TOOLS</a>
+  <a class="m-link" style="transition-delay:.32s" href="#contact"><span>05</span>CONTACT</a>
+  <div class="menu-foot">
+    <a class="btn btn-ghost" data-ig target="_blank" rel="noopener" data-testid="menu-instagram">Instagram</a>
+    <a class="btn btn-ghost" data-yt target="_blank" rel="noopener" data-testid="menu-youtube">YouTube</a>
+  </div>
+</div>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section id="home">
+    <div class="bg-sunset" aria-hidden="true"></div>
+    <div class="hero-horizon" aria-hidden="true"></div>
+
+    <!-- floating shapes (parallax) -->
+    <div class="fl-wrap f1" data-depth="0.7" aria-hidden="true">
+      <svg class="fl" style="--fd:.2s;--rot:-8deg" width="130" height="52" viewBox="0 0 130 52" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="1" width="128" height="50" rx="8"/><rect x="10" y="10" width="10" height="7" rx="2"/><rect x="10" y="35" width="10" height="7" rx="2"/><rect x="30" y="10" width="10" height="7" rx="2"/><rect x="30" y="35" width="10" height="7" rx="2"/><rect x="50" y="10" width="10" height="7" rx="2"/><rect x="50" y="35" width="10" height="7" rx="2"/><rect x="70" y="10" width="10" height="7" rx="2"/><rect x="70" y="35" width="10" height="7" rx="2"/><rect x="90" y="10" width="10" height="7" rx="2"/><rect x="90" y="35" width="10" height="7" rx="2"/><rect x="110" y="10" width="10" height="7" rx="2"/><rect x="110" y="35" width="10" height="7" rx="2"/></svg>
+    </div>
+    <div class="fl-wrap f2" data-depth="1.1" aria-hidden="true">
+      <svg class="fl" style="--fd:.9s" width="86" height="86" viewBox="0 0 86 86" fill="none" stroke="currentColor" stroke-width="2"><circle cx="43" cy="43" r="41"/><path d="M35 29l22 14-22 14z" fill="currentColor" stroke="none"/></svg>
+    </div>
+    <div class="fl-wrap f3" data-depth="0.85" aria-hidden="true">
+      <svg class="fl" style="--fd:.5s;--rot:6deg" width="96" height="64" viewBox="0 0 96 64" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="8" width="64" height="48" rx="10"/><path d="M66 26l26-12v36l-26-12"/><circle cx="22" cy="26" r="6"/></svg>
+    </div>
+    <div class="fl-wrap f4" data-depth="0.55" aria-hidden="true">
+      <svg class="fl" style="--fd:1.3s;--rot:12deg" width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2"><rect x="14" y="4" width="32" height="52" rx="7"/><path d="M26 24l12 8-12 8z" fill="currentColor" stroke="none"/></svg>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="chip"><span class="dot"></span>Video Editor &amp; Content Creator</span>
+        <span class="hero-loc">◆ Khategaon, Madhya Pradesh — India</span>
+      </div>
+      <h1 class="hero-name" data-testid="hero-name">
+        <span class="mask"><span class="line-in" style="--d:.05s">VIVEK</span></span>
+        <span class="mask"><span class="line-in grad-text" style="--d:.16s">SOLANKI</span></span>
+      </h1>
+      <p class="hero-tag line-in" style="--d:.3s" data-testid="hero-tagline">Edits That Make Your Content Go Viral</p>
+      <div class="hero-typing line-in" style="--d:.38s" data-testid="hero-typing">
+        <span class="pre">Specializing in</span><span id="typed"></span><span class="caret"></span>
+      </div>
+      <div class="hero-ctas line-in" style="--d:.46s">
+        <a href="#work" class="btn btn-grad" data-testid="hero-cta-work">View My Work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#contact" class="btn btn-ghost" data-testid="hero-cta-hire">Hire Me</a>
+      </div>
+      <p class="hero-meta line-in" style="--d:.54s">3 years of turning raw footage into scroll-stopping content.</p>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">Scroll<i></i></div>
+  </section>
+
+  <!-- ============ SLOW MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="mq-track" id="mqTrack"></div>
+  </div>
+
+  <!-- ============ VIRAL REELS SHOWCASE ============ -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="reveal">
+          <div class="eyebrow"><span class="num">01</span><span class="rule"></span><span class="tag">Selected Work</span></div>
+          <h2 class="sec-title">Scroll-Stopping <span class="grad-text">Reels</span></h2>
+          <p class="sec-sub">A few frames from the feed — vertical edits built to hook in the first second and hold till the last.</p>
+        </div>
+        <a class="btn btn-ghost reveal slide-r" data-ig target="_blank" rel="noopener" data-testid="watch-more-instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          Watch more on Instagram</a>
+      </div>
+      <!-- reel cards are rendered from the REELS config below -->
+      <div class="reels" id="reelsTrack" data-testid="reels-track"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo reveal slide-l" data-testid="about-photo">
+          <img src="/about.jpg" alt="Vivek Solanki's editing desk" loading="lazy" />
+          <div class="about-exp"><b>3+</b><span>Years of<br/>Experience</span></div>
+        </div>
+        <div class="reveal slide-r">
+          <div class="eyebrow"><span class="num">02</span><span class="rule"></span><span class="tag">About Me</span></div>
+          <h2 class="sec-title">Hi, I'm <span class="grad-text">Vivek</span> —<br/>the eye behind VKS CREATE</h2>
+          <p class="about-bio" data-testid="about-bio">
+            <strong>I'm Vivek Solanki, a video editor and content creator from Khategaon, Madhya Pradesh.</strong>
+            With 3 years of experience, I turn raw footage into scroll-stopping reels and engaging videos.
+            From smooth transitions and sharp color grading to motion graphics and eye-catching thumbnails,
+            I help creators and brands grow with content people actually watch.
+          </p>
+          <div class="about-sign">— VIVEK SOLANKI · VKS CREATE</div>
+        </div>
+      </div>
+      <!-- animated counters, rendered from the STATS config below -->
+      <div class="stats reveal" id="statsGrid" data-testid="stats-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="reveal">
+          <div class="eyebrow"><span class="num">03</span><span class="rule"></span><span class="tag">What I Do</span></div>
+          <h2 class="sec-title">Services that <span class="grad-text">sell the scroll</span></h2>
+        </div>
+        <p class="sec-sub reveal slide-r">Every edit ships with hooks, pacing and sound design tuned for the platform it's made for.</p>
+      </div>
+      <div class="svc-grid" id="svcGrid" data-testid="services-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SOFTWARE ============ -->
+  <section id="tools" class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="reveal">
+          <div class="eyebrow"><span class="num">04</span><span class="rule"></span><span class="tag">Toolbox</span></div>
+          <h2 class="sec-title">Software I <span class="grad-text">edit with</span></h2>
+        </div>
+      </div>
+      <div class="tools-row" id="toolsRow" data-testid="tools-row"></div>
+    </div>
+  </section>
+
+  <!-- ============ BEFORE / AFTER ============ -->
+  <section id="grade" class="section">
+    <div class="container ba-wrap">
+      <div class="sec-head" style="justify-content:center;text-align:center">
+        <div class="reveal" style="width:100%">
+          <div class="eyebrow" style="justify-content:center"><span class="num">05</span><span class="rule"></span><span class="tag">Color Grading</span></div>
+          <h2 class="sec-title">Raw footage, <span class="grad-text">meeting the grade</span></h2>
+          <p class="sec-sub" style="margin-inline:auto">Drag the handle and watch flat, lifeless frames turn into a warm cinematic sunset grade.</p>
+        </div>
+      </div>
+      <div class="ba reveal" id="ba" data-testid="before-after-slider">
+        <img src="/grade.jpg" alt="Final graded frame" draggable="false" />
+        <div class="ba-before-wrap"><img class="ba-before" src="/grade.jpg" alt="Raw ungraded frame" draggable="false" /></div>
+        <span class="ba-tag raw">Raw footage</span>
+        <span class="ba-tag graded">Final edit</span>
+        <div class="ba-handle" id="baHandle" data-testid="ba-handle" tabindex="0" role="slider" aria-label="Comparison slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+        </div>
+      </div>
+      <p class="ba-hint">← Drag anywhere on the frame →</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="reveal">
+          <div class="eyebrow"><span class="num">06</span><span class="rule"></span><span class="tag">Contact</span></div>
+          <h2 class="sec-title">Let's make your next post <span class="grad-text">go viral</span></h2>
+          <p class="sec-sub">Tell me about your project — I usually reply within a few hours.</p>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal slide-l">
+          <div class="direct" data-testid="direct-buttons">
+            <a data-tel data-testid="direct-call">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Call me<small data-tel-text></small></span></a>
+            <a data-wa target="_blank" rel="noopener" data-testid="direct-whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              <span>WhatsApp<small data-wa-text></small></span></a>
+            <a data-mail data-testid="direct-email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+              <span>Email<small data-mail-text></small></span></a>
+            <a data-ig target="_blank" rel="noopener" data-testid="direct-instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              <span>Instagram<small>@_vks_create</small></span></a>
+            <a data-yt target="_blank" rel="noopener" data-testid="direct-youtube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>
+              <span>YouTube<small>@vks_create</small></span></a>
+          </div>
+        </div>
+
+        <div class="form-card reveal slide-r" data-testid="contact-form-card">
+          <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+               PASTE YOUR FORMSPREE ENDPOINT in FORM_CONFIG below
+               (in the <script> at the bottom of this file) → formspree.io → new form → copy the https://formspree.io/f/xxxxxx URL.
+               Until then the form opens WhatsApp with the details pre-filled.
+          ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
+          <form id="contactForm" data-testid="contact-form" novalidate>
+            <div class="f-row">
+              <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" placeholder="Your name" required data-testid="field-name" /></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" placeholder="+91 …" required data-testid="field-phone" /></div>
+            </div>
+            <div class="f-row">
+              <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" placeholder="you@email.com" required data-testid="field-email" /></div>
+              <div class="field"><label for="f-budget">Budget</label><select id="f-budget" name="budget" data-testid="field-budget"></select></div>
+            </div>
+            <div class="field"><label for="f-service">Service Needed</label><select id="f-service" name="service" required data-testid="field-service"></select></div>
+            <div class="field"><label for="f-details">Project Details</label><textarea id="f-details" name="details" placeholder="Tell me about your footage, platform, deadline…" required data-testid="field-details"></textarea></div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-grad" data-testid="form-submit">Send Message
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+              <button type="button" class="btn btn-ghost" id="waSend" data-testid="whatsapp-send">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                Send on WhatsApp</button>
+            </div>
+            <p class="form-note">Submitting opens a direct line to Vivek — nothing is stored on this site.</p>
+          </form>
+          <!-- success animation -->
+          <div id="formSuccess" data-testid="form-success">
+            <div>
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="44"/><path d="M32 52l13 13 24-28"/></svg>
+              <h3>Message sent!</h3>
+              <p>Thanks for reaching out — Vivek will get back to you soon.</p>
+              <button class="btn btn-ghost" id="successClose" data-testid="form-success-close">Send another</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <span class="watermark" aria-hidden="true">VKS CREATE</span>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="brand"><span class="brand-mark" data-logo></span><span class="brand-text"><b>VKS</b><i>CREATE</i></span></a>
+        <p class="foot-blurb">Edits that make your content go viral. Reels, YouTube videos, color grading, motion graphics and thumbnails — from Khategaon to everywhere.</p>
+      </div>
+      <div>
+        <p class="foot-h">Quick Links</p>
+        <div class="foot-links">
+          <a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a>
+          <a href="#tools">Tools</a><a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="foot-h">Follow</p>
+        <div class="socials">
+          <a data-ig target="_blank" rel="noopener" aria-label="Instagram" data-testid="footer-instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a data-yt target="_blank" rel="noopener" aria-label="YouTube" data-testid="footer-youtube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+          <a data-wa target="_blank" rel="noopener" aria-label="WhatsApp" data-testid="footer-whatsapp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+          <a data-mail aria-label="Email" data-testid="footer-email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-testid="footer-copyright">© <span id="year"></span> VKS CREATE. All rights reserved.</span>
+      <span>Designed &amp; edited by Vivek Solanki</span>
+    </div>
+  </div>
+</footer>
+
+<!-- floating WhatsApp -->
+<a class="wa-float" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-testid="floating-whatsapp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+<button id="btt" aria-label="Back to top" data-testid="back-to-top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- reel lightbox -->
+<div id="lightbox" data-testid="reel-lightbox" aria-hidden="true" role="dialog" aria-label="Reel player">
+  <button class="lb-close" id="lbClose" data-testid="lightbox-close" aria-label="Close">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  <button class="lb-nav lb-prev" id="lbPrev" data-testid="lightbox-prev" aria-label="Previous reel">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-nav lb-next" id="lbNext" data-testid="lightbox-next" aria-label="Next reel">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg></button>
+  <div class="lb-caption" id="lbCaption"></div>
+</div>
+
+<div id="toast" role="status" data-testid="toast"></div>
+
+<script>
+/* ====================================================================
+   ★★★★★★★★★★★  VKS CREATE — EDIT EVERYTHING HERE  ★★★★★★★★★★★
+   All text, links, reels, stats and services live in this config block.
+   ==================================================================== */
+const SITE = {
+  name: "Vivek Solanki",
+  brand: "VKS CREATE",
+  tagline: "Edits That Make Your Content Go Viral",
+  location: "Khategaon, Madhya Pradesh, India",
+  phone: "+91 6353480688",
+  phoneRaw: "+916353480688",
+  whatsapp: "916353480688",
+  email: "viveksolanki7772@gmail.com",
+  instagram: "https://www.instagram.com/_vks_create/",
+  youtube: "https://www.youtube.com/@vks_create",
+  logoUrl: "",  /* ★ paste "/logo.png" after uploading your logo file — the SVG gimbal mark shows until then */
+};
+
+/* typing animation cycles through these */
+const TYPING = ["Reels Editing", "YouTube Editing", "Color Grading", "Motion Graphics", "Thumbnails"];
+
+/* marquee words (◆ separators are added automatically) */
+const MARQUEE = ["Reels Editing", "YouTube Editing", "Color Grading", "Motion Graphics", "Thumbnails", "VKS CREATE"];
+
+/* animated counters — change numbers/suffixes freely */
+const STATS = [
+  { count: 3,       suffix: "+", label: "Years Experience"  },
+  { count: 100,     suffix: "+", label: "Projects"           },
+  { count: 30,      suffix: "+", label: "Happy Clients"      },
+  { count: 1000000, suffix: "+", label: "Total Views"        },
+];
+
+const SERVICES = [
+  { icon: "reel",    title: "Reels Editing",        desc: "Hook-first vertical edits with beat-synced cuts, transitions and captions that keep viewers till the last frame." },
+  { icon: "youtube", title: "YouTube Video Editing", desc: "Punchy long-form edits — tight pacing, b-roll, sound design and retention curves that hold watch time." },
+  { icon: "grade",   title: "Color Grading",         desc: "From flat footage to a warm cinematic sunset grade — balanced tones, rich contrast, a signature look." },
+  { icon: "motion",  title: "Motion Graphics",       desc: "Animated titles, kinetic text, lower-thirds and logo stings that give your videos a premium identity." },
+  { icon: "thumb",   title: "Thumbnail Design",      desc: "Scroll-stopping thumbnails engineered for clicks — bold contrast, clean composition, expressive emotion." },
+];
+
+const TOOLS = [
+  { name: "CapCut", use: "Precision mobile editing" },
+  { name: "VN",     use: "Cinematic timeline on the go" },
+  { name: "Edits",  use: "Next-gen creator toolkit" },
+];
+
+/* ★ YOUR REELS — 4 real reels (H.264 MP4, 720px wide, served from /reels/).
+   url:  a local file (/reels/reel-N.mp4), an MP4 link, or an Instagram reel link.
+   views: put your real counts here (e.g. "12.4K"). Posters are real first frames. */
+const REELS = [
+  { title: "Traditional Grace", views: "New", url: "/reels/reel-1.mp4", poster: "/reels/reel-1-poster.jpg" },
+  { title: "Ritik & Komal",     views: "New", url: "/reels/reel-2.mp4", poster: "/reels/reel-2-poster.jpg" },
+  { title: "Wedding Vows",      views: "New", url: "/reels/reel-3.mp4", poster: "/reels/reel-3-poster.jpg" },
+  { title: "Garba Night",       views: "New", url: "/reels/reel-4.mp4", poster: "/reels/reel-4-poster.jpg" },
+];
+
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+   CONTACT FORM DELIVERY — paste your endpoint / keys here
+   1) FORMSPREE (recommended): create a form at formspree.io and paste
+      the endpoint, e.g. "https://formspree.io/f/abcd1234"
+   2) EMAILJS (optional alternative): fill all three fields instead.
+   Until one is filled, "Send Message" opens WhatsApp pre-filled.  */
+const FORM_CONFIG = {
+  formspreeEndpoint: "",                                    /* ★ PASTE YOUR FORMSPREE ENDPOINT HERE */
+  emailjs: { serviceId: "", templateId: "", publicKey: "" } /* ★ or paste your EmailJS keys here    */
+};
+
+/* budget options in the form dropdown */
+const BUDGETS = ["Let's discuss", "Under ₹1,000", "₹1,000 – ₹5,000", "₹5,000 – ₹20,000", "₹20,000+"];
+/* ====================================================================
+   ★★★★★★★★★★★  nothing below needs editing  ★★★★★★★★★★★
+   ==================================================================== */
+
+const $  = (s, c = document) => c.querySelector(s);
+const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- logo mark (used as fallback until SITE.logoUrl is set) ---------- */
+const LOGO_MARK = `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="15" y="5" width="18" height="25" rx="3.5"/>
+  <path d="M7 17.5h8M33 17.5h8"/><circle cx="7" cy="17.5" r="1.4" fill="currentColor"/><circle cx="41" cy="17.5" r="1.4" fill="currentColor"/>
+  <path d="M24 30v9M24 39l-9.5 7.5M24 39l9.5 7.5"/></svg>`;
+$$("[data-logo]").forEach(el => {
+  if (SITE.logoUrl) { el.innerHTML = `<img src="${SITE.logoUrl}" alt="${SITE.brand} logo" style="width:100%;height:100%;object-fit:contain"/>`; }
+  else { el.innerHTML = LOGO_MARK; }
+});
+
+/* ---------- inject contact links everywhere ---------- */
+$$("[data-tel]").forEach(a => { a.href = `tel:${SITE.phoneRaw}`; });
+$$("[data-tel-text]").forEach(el => el.textContent = SITE.phone);
+$$("[data-mail]").forEach(a => { a.href = `mailto:${SITE.email}`; });
+$$("[data-mail-text]").forEach(el => el.textContent = SITE.email);
+const waBase = `https://wa.me/${SITE.whatsapp}`;
+$$("[data-wa]").forEach(a => a.href = waBase);
+$$("[data-wa-text]").forEach(el => el.textContent = `WhatsApp ${SITE.phone}`);
+$$("[data-ig]").forEach(a => a.href = SITE.instagram);
+$$("[data-yt]").forEach(a => a.href = SITE.youtube);
+$("#year").textContent = new Date().getFullYear();
+
+/* ---------- intro loader ---------- */
+(() => {
+  const intro = $("#intro");
+  if (REDUCED) { intro.remove(); document.body.classList.add("loaded"); return; }
+  setTimeout(() => { intro.classList.add("done"); document.body.classList.add("loaded"); }, 1500);
+  setTimeout(() => { intro.classList.add("gone"); intro.remove(); }, 2700);
+})();
+
+/* ---------- lenis smooth scroll (guarded) ---------- */
+let lenis = null;
+if (window.Lenis && !REDUCED) {
+  lenis = new Lenis({ duration: 1.15, smoothWheel: true });
+  const raf = t => { lenis.raf(t); requestAnimationFrame(raf); };
+  requestAnimationFrame(raf);
+}
+const scrollToEl = el => lenis ? lenis.scrollTo(el, { offset: -70, duration: 1.2 }) : el.scrollIntoView({ behavior: "smooth" });
+
+/* anchor clicks → smooth scroll, close mobile menu */
+$$('a[href^="#"]').forEach(a => a.addEventListener("click", e => {
+  const t = $(a.getAttribute("href")); if (!t) return;
+  e.preventDefault(); closeMenu(); scrollToEl(t);
+}));
+
+/* ---------- navbar / progress / back-to-top ---------- */
+const nav = $("#nav"), prog = $("#progress i"), btt = $("#btt");
+addEventListener("scroll", () => {
+  nav.classList.toggle("scrolled", scrollY > 30);
+  const h = document.documentElement.scrollHeight - innerHeight;
+  prog.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
+  btt.classList.toggle("show", scrollY > 650);
+}, { passive: true });
+btt.addEventListener("click", () => lenis ? lenis.scrollTo(0, { duration: 1.3 }) : scrollTo({ top: 0, behavior: "smooth" }));
+
+/* section spy */
+const spy = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  $$(".links a").forEach(a => a.classList.toggle("active", a.dataset.spy === e.target.id));
+}), { rootMargin: "-40% 0px -55% 0px" });
+$$("main section").forEach(s => spy.observe(s));
+
+/* ---------- mobile menu ---------- */
+const menu = $("#menu"), burger = $("#burger");
+function closeMenu(){ menu.classList.remove("open"); burger.classList.remove("open"); burger.setAttribute("aria-expanded","false"); menu.setAttribute("aria-hidden","true"); document.body.style.overflow = ""; lenis && lenis.start(); }
+burger.addEventListener("click", () => {
+  const open = menu.classList.toggle("open");
+  burger.classList.toggle("open", open);
+  burger.setAttribute("aria-expanded", open);
+  menu.setAttribute("aria-hidden", !open);
+  document.body.style.overflow = open ? "hidden" : "";
+  lenis && (open ? lenis.stop() : lenis.start());
+});
+
+/* ---------- typing animation ---------- */
+(() => {
+  const el = $("#typed"); if (!el || REDUCED) { el.textContent = TYPING[0]; return; }
+  let w = 0, i = 0, del = false;
+  (function tick(){
+    const word = TYPING[w];
+    el.textContent = word.slice(0, i);
+    if (!del) { i++; if (i > word.length) { del = true; return setTimeout(tick, 1500); } return setTimeout(tick, 78); }
+    i--; if (i === 0) { del = false; w = (w + 1) % TYPING.length; }
+    setTimeout(tick, 38);
+  })();
+})();
+
+/* ---------- marquee ---------- */
+(() => {
+  const one = MARQUEE.map((m, i) => `<span class="mq-item${i % 2 ? " fill" : ""}">${m}</span><span class="mq-dot"></span>`).join("");
+  $("#mqTrack").innerHTML = `<div>${one}</div><div aria-hidden="true">${one}</div>`;
+})();
+
+/* ---------- reels gallery ---------- */
+const playSvg = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
+const reelsTrack = $("#reelsTrack");
+REELS.forEach((r, i) => {
+  const isVideo = /\.(mp4|webm|mov)(\?|$)/i.test(r.url || "");
+  const card = document.createElement("article");
+  card.className = "reel"; card.tabIndex = 0; card.dataset.i = i;
+  card.setAttribute("data-testid", `reel-card-${i}`); card.setAttribute("role", "button"); card.setAttribute("aria-label", `Play ${r.title}`);
+  card.innerHTML = `
+    <div class="reel-media">
+      <img src="${r.poster}" alt="${r.title} reel poster" loading="lazy" ${isVideo ? "" : ""}/>
+      ${isVideo ? `<video data-src="${r.url}" muted loop playsinline preload="none" poster="${r.poster}"></video>` : ""}
+    </div>
+    <div class="reel-shade"></div>
+    <span class="reel-badge" data-testid="reel-views-${i}">${playSvg}${r.views || "—"}</span>
+    <div class="reel-play">${playSvg}</div>
+    <div class="reel-meta"><div class="reel-title">${r.title}</div><div class="reel-sub">${r.url ? "Tap to watch" : "Reel coming soon"}</div></div>`;
+  reelsTrack.appendChild(card);
+});
+
+/* autoplay muted + looped when in view, pause when out */
+const videoIO = new IntersectionObserver(es => es.forEach(e => {
+  const v = e.target.querySelector("video"); if (!v) return;
+  if (e.isIntersecting) { if (!v.src) v.src = v.dataset.src; v.play().catch(() => {}); }
+  else v.pause();
+}), { threshold: 0.35 });
+$$(".reel").forEach(c => videoIO.observe(c));
+
+/* ---------- lightbox ---------- */
+const lb = $("#lightbox"), lbStage = $("#lbStage"), lbCaption = $("#lbCaption");
+let lbIndex = 0, lastFocus = null;
+function openLightbox(i){
+  lbIndex = (i + REELS.length) % REELS.length;
+  const r = REELS[lbIndex];
+  lbStage.innerHTML = "";
+  if (/\.(mp4|webm|mov)(\?|$)/i.test(r.url || "")) {
+    const v = document.createElement("video");
+    v.src = r.url; v.controls = true; v.autoplay = true; v.playsInline = true; v.loop = true;
+    lbStage.appendChild(v);
+  } else if (/instagram\.com\/(reel|reels)\/([A-Za-z0-9_-]+)/.test(r.url || "")) {
+    const id = r.url.match(/instagram\.com\/(?:reel|reels)\/([A-Za-z0-9_-]+)/)[1];
+    const f = document.createElement("iframe");
+    f.src = `https://www.instagram.com/reel/${id}/embed`; f.allowFullScreen = true;
+    f.setAttribute("allow", "autoplay; encrypted-media");
+    lbStage.appendChild(f);
+  } else {
+    lbStage.innerHTML = `<div class="lb-empty"><div>★ This slot is waiting for your reel ★<br/><br/>Open <b>REELS</b> in the config at the top of the file and paste an MP4 link or an Instagram reel URL.</div></div>`;
+  }
+  lbCaption.textContent = `${r.title} · ${r.views || ""} views`;
+  lb.classList.add("open"); lb.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden"; lenis && lenis.stop();
+  lastFocus = document.activeElement; $("#lbClose").focus();
+}
+function closeLightbox(){
+  lb.classList.remove("open"); lb.setAttribute("aria-hidden", "true");
+  lbStage.innerHTML = "";
+  document.body.style.overflow = ""; lenis && lenis.start();
+  lastFocus && lastFocus.focus();
+}
+$("#lbClose").addEventListener("click", closeLightbox);
+$("#lbPrev").addEventListener("click", () => openLightbox(lbIndex - 1));
+$("#lbNext").addEventListener("click", () => openLightbox(lbIndex + 1));
+lb.addEventListener("click", e => { if (e.target === lb) closeLightbox(); });
+addEventListener("keydown", e => {
+  if (!lb.classList.contains("open")) return;
+  if (e.key === "Escape") closeLightbox();
+  if (e.key === "ArrowLeft") openLightbox(lbIndex - 1);
+  if (e.key === "ArrowRight") openLightbox(lbIndex + 1);
+});
+$$(".reel").forEach(c => {
+  c.addEventListener("click", () => openLightbox(+c.dataset.i));
+  c.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(+c.dataset.i); } });
+});
+
+/* ---------- stats counters ---------- */
+$("#statsGrid").innerHTML = STATS.map((s, i) => `
+  <div class="stat" data-testid="stat-${i}">
+    <span class="stat-num" data-count="${s.count}" data-suffix="${s.suffix}" data-testid="stat-counter-${i}">0${s.suffix}</span>
+    <span class="stat-label">${s.label}</span>
+  </div>`).join("");
+function animateCount(el){
+  const target = +el.dataset.count, suf = el.dataset.suffix, big = target >= 1000000;
+  const t0 = performance.now(), dur = 2000;
+  (function f(t){
+    const p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3), v = Math.round(target * e);
+    el.innerHTML = (big ? (v / 1000000).toFixed(1).replace(/\.0$/, "") + "M" : v.toLocaleString("en-IN")) + `<em>${suf}</em>`;
+    if (p < 1) requestAnimationFrame(f);
+  })(t0);
+}
+const statIO = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  animateCount(e.target); statIO.unobserve(e.target);
+}), { threshold: 0.5 });
+$$(".stat-num").forEach(el => statIO.observe(el));
+
+/* ---------- services ---------- */
+const ICONS = {
+  reel:   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M10.5 9.5l4 2.5-4 2.5z" fill="currentColor" stroke="none"/></svg>`,
+  youtube:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>`,
+  grade:  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6.5 7 6.5 11.3a6.5 6.5 0 0 1-13 0C5.5 9.7 12 2.7 12 2.7z"/></svg>`,
+  motion: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg>`,
+  thumb:  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>`,
+};
+$("#svcGrid").innerHTML = SERVICES.map((s, i) => `
+  <div class="svc reveal" style="--d:${i * 0.08}s" data-testid="service-card-${i}">
+    <span class="svc-no">0${i + 1}</span>
+    <div class="svc-ic">${ICONS[s.icon]}</div>
+    <h3>${s.title}</h3><p>${s.desc}</p>
+  </div>`).join("");
+
+/* tilt + glow */
+if (matchMedia("(hover:hover)").matches) $$(".svc").forEach(c => {
+  c.addEventListener("pointermove", e => {
+    const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+    c.style.setProperty("--rx", ((.5 - y) * 7) + "deg");
+    c.style.setProperty("--ry", ((x - .5) * 9) + "deg");
+    c.style.setProperty("--gx", (x * 100) + "%");
+    c.style.setProperty("--gy", (y * 100) + "%");
+  });
+  c.addEventListener("pointerleave", () => { c.style.setProperty("--rx", "0deg"); c.style.setProperty("--ry", "0deg"); });
+});
+
+/* ---------- tools ---------- */
+$("#toolsRow").innerHTML = TOOLS.map(t => `
+  <div class="tool reveal" data-testid="tool-${t.name.toLowerCase()}">
+    <div class="tool-glow"></div>
+    <div class="tool-name">${t.name}</div>
+    <div class="tool-use">${t.use}</div>
+  </div>`).join("");
+
+/* ---------- before / after slider ---------- */
+(() => {
+  const ba = $("#ba"), wrap = $(".ba-before-wrap", ba), img = $(".ba-before", ba), handle = $("#baHandle");
+  const setW = () => { img.style.width = ba.offsetWidth + "px"; };
+  setW(); addEventListener("resize", setW);
+  const setPos = clientX => {
+    const r = ba.getBoundingClientRect();
+    let p = Math.max(2, Math.min(98, (clientX - r.left) / r.width * 100));
+    ba.style.setProperty("--pos", p + "%");
+    handle.setAttribute("aria-valuenow", Math.round(p));
+  };
+  ba.addEventListener("pointerdown", e => {
+    ba.setPointerCapture(e.pointerId); setPos(e.clientX);
+    const mv = ev => setPos(ev.clientX);
+    ba.addEventListener("pointermove", mv);
+    ba.addEventListener("pointerup", () => ba.removeEventListener("pointermove", mv), { once: true });
+  });
+  handle.addEventListener("keydown", e => {
+    const cur = parseFloat(getComputedStyle(ba).getPropertyValue("--pos")) || 50;
+    if (e.key === "ArrowLeft")  { ba.style.setProperty("--pos", Math.max(2, cur - 4) + "%"); e.preventDefault(); }
+    if (e.key === "ArrowRight") { ba.style.setProperty("--pos", Math.min(98, cur + 4) + "%"); e.preventDefault(); }
+  });
+})();
+
+/* ---------- contact form ---------- */
+(() => {
+  const form = $("#contactForm"), success = $("#formSuccess"), toast = $("#toast");
+  let toastT;
+  const showToast = msg => { toast.textContent = msg; toast.classList.add("show"); clearTimeout(toastT); toastT = setTimeout(() => toast.classList.remove("show"), 4200); };
+
+  /* dropdown options from config */
+  $("#f-service").innerHTML = `<option value="" disabled selected>Choose a service…</option>` +
+    SERVICES.map(s => `<option>${s.title}</option>`).join("") + `<option>Something else</option>`;
+  $("#f-budget").innerHTML = BUDGETS.map((b, i) => `<option ${i === 0 ? "selected" : ""}>${b}</option>`).join("");
+
+  const buildWaText = d =>
+    `Hi Vivek! New project enquiry via your portfolio:%0A%0A👤 Name: ${d.name}%0A📞 Phone: ${d.phone}%0A📧 Email: ${d.email}%0A🛠 Service: ${d.service}%0A💰 Budget: ${d.budget}%0A📝 Details: ${d.details}`;
+
+  const collect = () => Object.fromEntries(new FormData(form));
+
+  /* WhatsApp pre-filled send */
+  $("#waSend").addEventListener("click", () => {
+    const d = collect();
+    if (!d.name || !d.details) return showToast("Add at least your name and project details first.");
+    open(`${waBase}?text=${buildWaText(d)}`, "_blank");
+  });
+
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const d = collect();
+    if (!d.name || !d.phone || !d.email || !d.service || !d.details) return showToast("Please fill in all the required fields.");
+    const ep = FORM_CONFIG.formspreeEndpoint, ej = FORM_CONFIG.emailjs;
+    try {
+      if (ep) {                                        /* 1) Formspree */
+        const r = await fetch(ep, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(d) });
+        if (!r.ok) throw new Error("formspree");
+        showSuccess();
+      } else if (ej.serviceId && ej.templateId && ej.publicKey) {  /* 2) EmailJS */
+        if (!window.emailjs) { await new Promise((res, rej) => { const s = document.createElement("script"); s.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"; s.onload = res; s.onerror = rej; document.head.appendChild(s); }); }
+        window.emailjs.init({ publicKey: ej.publicKey });
+        await window.emailjs.send(ej.serviceId, ej.templateId, d);
+        showSuccess();
+      } else {                                         /* 3) fallback → WhatsApp */
+        showToast("Form endpoint not connected yet — opening WhatsApp with your details.");
+        setTimeout(() => open(`${waBase}?text=${buildWaText(d)}`, "_blank"), 700);
+        showSuccess();
+      }
+    } catch { showToast("Could not send right now — please use WhatsApp or email me directly."); }
+  });
+
+  function showSuccess(){ success.classList.add("show"); form.reset(); }
+  $("#successClose").addEventListener("click", () => success.classList.remove("show"));
+})();
+
+/* ---------- scroll reveals ---------- */
+(() => {
+  const els = $$(".reveal");
+  if (REDUCED) { els.forEach(el => el.classList.add("in")); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add("in"); io.unobserve(e.target);
+  }), { threshold: 0.15 });
+  els.forEach(el => io.observe(el));
+})();
+
+/* ---------- hero parallax floats (desktop) ---------- */
+(() => {
+  if (!matchMedia("(hover:hover)").matches || REDUCED) return;
+  const layers = $$(".fl-wrap"); let mx = 0, my = 0, cx = 0, cy = 0;
+  addEventListener("mousemove", e => { mx = e.clientX / innerWidth - .5; my = e.clientY / innerHeight - .5; }, { passive: true });
+  (function loop(){
+    cx += (mx - cx) * .055; cy += (my - cy) * .055;
+    const sy = scrollY;
+    layers.forEach(l => {
+      const d = +l.dataset.depth;
+      l.style.transform = `translate3d(${cx * 46 * d}px, ${cy * 34 * d + sy * d * 0.12}px, 0)`;
+    });
+    requestAnimationFrame(loop);
+  })();
+})();
+
+/* ---------- glowing cursor (desktop only) ---------- */
+(() => {
+  if (!matchMedia("(hover:hover) and (pointer:fine)").matches || REDUCED) return;
+  const ring = $("#cursor"), dot = $("#cursor-dot");
+  let x = innerWidth / 2, y = innerHeight / 2, rx = x, ry = y;
+  addEventListener("mousemove", e => { x = e.clientX; y = e.clientY; dot.style.transform = `translate(${x - 3}px, ${y - 3}px)`; }, { passive: true });
+  (function loop(){ rx += (x - rx) * .16; ry += (y - ry) * .16; ring.style.transform = `translate(${rx - 17}px, ${ry - 17}px)`; requestAnimationFrame(loop); })();
+  addEventListener("mouseover", e => document.body.classList.toggle("cursor-hover", !!e.target.closest("a, button, .reel, .svc, input, select, textarea, .ba-handle")));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{
+  "project_type": "vanilla_html_css_js",
+  "file_structure": [
+    "/app/index.html"
+  ],
+  "theme": {
+    "background": "#0B0B0F",
+    "text": "#FFFFFF",
+    "primary_gradient": "linear-gradient(135deg, #6B7A8F 0%, #F4A261 100%)",
+    "sunset_glow": "#F4A261"
+  },
+  "typography": {
+    "headings": "Bebas Neue, sans-serif",
+    "body": "Poppins, sans-serif",
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap",
+    "instructions": "Use Bebas Neue for all H1, H2, H3 and high-impact stats. Use Poppins for descriptions, buttons, and form inputs."
+  },
+  "cdn_libraries": [
+    "<script src=\"https://cdn.tailwindcss.com\"></script>",
+    "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js\"></script>",
+    "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js\"></script>",
+    "<script src=\"https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js\"></script>",
+    "<script src=\"https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js\"></script>",
+    "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js\"></script>"
+  ],
+  "tailwind_config_override": "<script>tailwind.config = { theme: { extend: { colors: { base: '#0B0B0F', sunset: '#F4A261', dusty: '#6B7A8F' }, fontFamily: { bebas: ['Bebas Neue', 'sans-serif'], poppins: ['Poppins', 'sans-serif'] } } } }</script>",
+  "components_and_sections": [
+    {
+      "name": "Preloader",
+      "instructions": "Full screen #0B0B0F div with 'VKS CREATE' text in the center. Use GSAP to fade out the text and then slide the preloader div up after 2 seconds to reveal the page."
+    },
+    {
+      "name": "Custom Cursor & Scroll Progress",
+      "instructions": "Desktop only. A glowing dot (using CSS mix-blend-mode: difference or a soft glowing shadow) that follows the mouse using JS. Add a fixed 2px height div at the top of the viewport representing scroll progress, colored with the sunset gradient, updated via JS on scroll."
+    },
+    {
+      "name": "Navbar",
+      "instructions": "Sticky at top, z-50. bg-base/80 with backdrop-blur-md. Logo 'VKS' on left, links (Work, About, Services, Contact) on right. Include a mobile hamburger menu."
+    },
+    {
+      "name": "Hero Section",
+      "instructions": "min-h-screen. Center aligned layout. Animated sunset gradient blob in background (absolute, blur-[120px], opacity-30). Main text: 'VIVEK SOLANKI' in Bebas Neue, text-7xl to text-9xl. Implement a line-by-line reveal using GSAP. Below name, add 'VKS CREATE - ' and a span for Typed.js looping through ('Reels Editing', 'YouTube Editing', 'Color Grading', 'Motion Graphics', 'Thumbnails'). Floating abstract SVG shapes (camera, play button, film strip) with parallax effect on scroll."
+    },
+    {
+      "name": "Reels Gallery",
+      "instructions": "9:16 vertical items. Use horizontal scroll snap (flex overflow-x-auto snap-x) on mobile and a 4-column grid on desktop. Each item is a card with a thumbnail image, a play icon overlay, and a 'View Badge' (e.g. '1M+ Views') positioned absolute at the top right. Add hover effects to scale up the thumbnail."
+    },
+    {
+      "name": "About & Stats",
+      "instructions": "Section with a cinematic portrait of the editor. Grid of stats: '3+ Years', '100+ Projects', '30+ Clients', '1M+ Views'. Use GSAP ScrollTrigger to count up these numbers from 0 when they enter the viewport."
+    },
+    {
+      "name": "Service Cards",
+      "instructions": "5 cards (Reels, YouTube, Color Grading, Motion Graphics, Thumbnails). Apply Vanilla-tilt.js (data-tilt) to each card. Dark glassmorphism background (bg-white/5) with a 1px border of white/10. On hover, add a soft sunset shadow glow (shadow-[0_0_20px_rgba(244,162,97,0.3)])."
+    },
+    {
+      "name": "Software Marquee",
+      "instructions": "Infinite scrolling text/logo marquee. Text like: 'CAPCUT • PREMIERE PRO • AFTER EFFECTS • DAVINCI RESOLVE • VN'. Use CSS keyframes for a continuous horizontal translation. Large Bebas Neue text, outline only (transparent text, white stroke)."
+    },
+    {
+      "name": "Color Grade Slider",
+      "instructions": "Interactive before/after slider. A container with two superimposed images. An input type='range' over it to adjust the width of the top image container. Top image: Color Graded. Bottom image: Use CSS filter: grayscale(100%) or sepia on the same base image to simulate 'Raw/Log' footage."
+    },
+    {
+      "name": "Contact & Footer",
+      "instructions": "Formspree HTML form placeholder (Name, Email, Message, Submit). A 'Send via WhatsApp' button (links to wa.me with prefilled text). Footer with social links (Instagram, YouTube, Email)."
+    },
+    {
+      "name": "Floating Action Buttons",
+      "instructions": "Fixed bottom-right WhatsApp button with a continuous pulse animation. Fixed bottom-left Back-to-Top button (appears after scrolling 500px)."
+    }
+  ],
+  "images": {
+    "about_portrait": "https://images.unsplash.com/photo-1490810194309-344b3661ba39?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwzfHxjaW5lbWF0aWMlMjB2aWRlbyUyMGVkaXRpbmclMjB3b3Jrc3BhY2UlMjBkYXJrfGVufDB8fHx8MTc5Mjg1MjQxMXww&ixlib=rb-4.1.0&q=85",
+    "reels_thumbnails": [
+      "https://images.unsplash.com/photo-1496680392913-a0417ec1a0ad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxjaW5lbWF0aWMlMjB2ZXJ0aWNhbCUyMHZpZGVvJTIwdGh1bWJuYWlsfGVufDB8fHx8MTc5Mjg1MjQxMXww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1608663003471-9fe0ded7eb34?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxjaW5lbWF0aWMlMjB2ZXJ0aWNhbCUyMHZpZGVvJTIwdGh1bWJuYWlsfGVufDB8fHx8MTc5Mjg1MjQxMXww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxjaW5lbWF0aWMlMjB2ZXJ0aWNhbCUyMHZpZGVvJTIwdGh1bWJuYWlsfGVufDB8fHx8MTc5Mjg1MjQxMXww&ixlib=rb-4.1.0&q=85"
+    ],
+    "color_grading_base": "https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxjaXR5JTIwc3RyZWV0JTIwbmlnaHQlMjBjaW5lbWF0aWN8ZW58MHx8fHwxNzkyODUyNDExfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: The user requested a single `index.html` file using vanilla HTML, CSS, and JS. DO NOT initialize a React, Next.js, or Vite project. DO NOT use Shadcn.",
+    "Write ALL code (HTML, CSS in <style>, JS in <script>) inside `/app/index.html`.",
+    "Use CDN links for Tailwind CSS, GSAP, Lenis, Typed.js, and Vanilla-tilt in the <head>.",
+    "Ensure all interactive elements have a `data-testid` attribute.",
+    "Do not use complete transparent background in header. Use bg-[#0B0B0F]/80 with backdrop-blur-md.",
+    "Ensure contrast requirements are met (white text on #0B0B0F).",
+    "Build the before/after slider purely with HTML/CSS/JS (an input range absolute-positioned over a masked image container).",
+    "Make sure the hero section is extremely cinematic and responsive (mobile first).",
+    "Add the custom cursor logic. Hide it on mobile/touch devices using CSS media queries (pointer: coarse).",
+    "Implement the continuous scrolling software marquee using CSS @keyframes."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters.",
+    "You MUST NOT apply universal transition (transition: all). Always add transitions for specific interactive elements to avoid breaking GSAP transforms.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Never use placeholder text for images. Use the provided image URLs."
+  ],
+  "GENERAL_UI_UX_DESIGN_GUIDELINES": [
+    "Design with a mobile-first philosophy, as the primary audience arrives via Instagram.",
+    "Optical alignment over geometrical alignment (e.g., visually center play icons inside rounded boxes).",
+    "Ensure generous padding between sections (e.g., py-24 or py-32) to let the cinematic visuals breathe.",
+    "Buttons should have distinct hover states (e.g., bg-sunset transitioning to a brighter tone, adding glow).",
+    "Form inputs must have visible focus states that contrast well against the dark background."
+  ]
+}
